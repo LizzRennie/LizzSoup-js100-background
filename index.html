@@ -9,7 +9,15 @@
 </head>
 
 <body>
-  <div class="container">
+  <form id="form" class="form">
+    <label for="name" class="label">What's your name?</label>
+    <input type="text" placeholder="Your first name" id="name" class="input">
+    <button type="button" id="subBtn" class="button">Okay</button>
+  </form>
+
+  <div class="container hidden">
+    <h2 id="message" class="message">Pop all the balloons!</h2>
+
     <div class="row">
       <div class="balloon pink"></div>
       <div class="balloon blue hbd"></div>
@@ -57,8 +65,6 @@
       <div class="balloon purple hbd"></div>
       <div class="balloon teal"></div>
     </div>
-
-    <h2 id="message" class="message">Pop the balloons!</h2>
   </div>
 
   <script src="script.js"></script>
